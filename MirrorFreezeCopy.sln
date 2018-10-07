@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MirrorFreezeCopy.Persistence", "MirrorFreezeCopy.Persistence\MirrorFreezeCopy.Persistence.csproj", "{331FE41A-71A7-4271-8718-7DF94BE9E8B8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3562553E-3C2A-4278-82FC-5147816A4748} = {3562553E-3C2A-4278-82FC-5147816A4748}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MirrorFreezeCopy.WindowsService", "MirrorFreezeCopy.WindowsService\MirrorFreezeCopy.WindowsService.csproj", "{6BECBAE8-FF27-4DAA-BFCF-BED8ADBC86A8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{331FE41A-71A7-4271-8718-7DF94BE9E8B8} = {331FE41A-71A7-4271-8718-7DF94BE9E8B8}
+		{3562553E-3C2A-4278-82FC-5147816A4748} = {3562553E-3C2A-4278-82FC-5147816A4748}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MirrorFreezeCopy.Domain", "MirrorFreezeCopy.Domain\MirrorFreezeCopy.Domain.csproj", "{3562553E-3C2A-4278-82FC-5147816A4748}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{331FE41A-71A7-4271-8718-7DF94BE9E8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331FE41A-71A7-4271-8718-7DF94BE9E8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331FE41A-71A7-4271-8718-7DF94BE9E8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331FE41A-71A7-4271-8718-7DF94BE9E8B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BECBAE8-FF27-4DAA-BFCF-BED8ADBC86A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BECBAE8-FF27-4DAA-BFCF-BED8ADBC86A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BECBAE8-FF27-4DAA-BFCF-BED8ADBC86A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BECBAE8-FF27-4DAA-BFCF-BED8ADBC86A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3562553E-3C2A-4278-82FC-5147816A4748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3562553E-3C2A-4278-82FC-5147816A4748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3562553E-3C2A-4278-82FC-5147816A4748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3562553E-3C2A-4278-82FC-5147816A4748}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5428E106-7000-4037-A87A-4DB29785744A}
+	EndGlobalSection
+EndGlobal
