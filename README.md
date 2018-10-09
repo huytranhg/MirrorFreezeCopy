@@ -12,7 +12,7 @@ MirrorFreezeCopy Windows Service
 + Mirror, meaning mirror copy from Source folder to Destination folder whenever Source folder has changed (deletion is not considered a change).
 + Freeze, meaning mirror copy from Destination folder to Source folder whenever Source folder has changed (deletion is not considered a change).
 + Copy, meaning copy only, from Source folder to Destination folder whenever Source folder has changed (deletion is not considered a change).
--	The mirror copy makes an exact 1:1 copy of the two folders, the deleted files are deleted in both folders, so use Mirror and Freeze functions at your own risk.
+- The mirror copy makes an exact 1:1 copy of the two folders, the non-existed files and folders in Source folder will be deleted in Destination folder, so use Mirror and Freeze functions at your own risk.
 
 ***Installation, Uninstallation***
   
@@ -54,7 +54,7 @@ MirrorFreezeCopy Windows Service
 - MirrorFreezeCopy is designed for personal use only.
 - It hasn't been tested under extreme conditions, for example, the Source folder is shared and changed by many users, or by other computer programs.
 -	Under extreme conditions, it may show malfunctions, or decreasing in performance.
--	The mirror copy makes an exact 1:1 copy of the two folders, meaning the deleted files are deleted in both folders, so use Mirror and Freeze functions at your own risk.
+-	The mirror copy makes an exact 1:1 copy of the two folders, the non-existed files and folders in Source folder will be deleted in Destination folder, so use Mirror and Freeze functions at your own risk.
 -	I didn't imagine the Freeze function, it is used to freeze the config folder of Youtube Downloader HD https://www.youtubedownloaderhd.com, which normally is C:\Users\Username\AppData\Roaming\Youtube Downloader HD
 - The Interval node of configuration file is in seconds.
 	
