@@ -57,6 +57,7 @@ MirrorFreezeCopy Windows Service
 -	The mirror copy makes an exact 1:1 copy of the two folders, the non-existed files and folders in Source folder will be deleted in Destination folder, so use Mirror and Freeze functions at your own risk.
 -	I didn't imagine the Freeze function, it is used to freeze the config folder of Youtube Downloader HD https://www.youtubedownloaderhd.com, which normally is C:\Users\Username\AppData\Roaming\Youtube Downloader HD
 - The Interval node of configuration file is in seconds.
+- In case the folder size, or number of files, from Windows GUI (Properties) doesn't tally with MirrorFreezeCopy's log, please use a 3rd-party program like WinDirStat https://windirstat.net, or RidNacs https://www.splashsoft.de/ridnacs-disk-space-usage-analyzer to compare with MirrorFreezeCopy's log, since these programs's statistic does tally with MirrorFreezeCopy's log.
 	
 ***Source Code***
 - Source code of this program can be found at github: https://github.com/huytranhg/MirrorFreezeCopy
