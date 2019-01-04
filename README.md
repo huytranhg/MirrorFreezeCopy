@@ -1,6 +1,8 @@
 # MirrorFreezeCopy
 MirrorFreezeCopy Windows Service
 
+MirrorFreezeCopy's built can be downloaded from this link: https://1drv.ms/u/s!AoP1RrY3fZ23cyXVtDaMPvyQWtA
+
 ***Prerequisites***
 - MirrorFreezeCopy can be run on Windows 7 or higher version of Windows OS.
 - It requires Microsoft .NET Framework 4.5 or higher version to be run.
