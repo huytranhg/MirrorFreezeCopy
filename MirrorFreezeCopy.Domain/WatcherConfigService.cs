@@ -52,7 +52,10 @@ namespace MirrorFreezeCopy.Domain
                     {
                         foreach (Watcher runningWatcher in listUncheckedWatcher)
                         {
-                            if (!this.PostcheckWatcherIsRootFolder(runningWatcher) && this.PostcheckIsDefinedAction(runningWatcher))
+                            if (this.PostcheckSourceFolderExisted(runningWatcher)
+                                && this.PostcheckDestinationFolderCanBeCreated(runningWatcher)
+                                && !this.PostcheckWatcherIsRootFolder(runningWatcher)
+                                && this.PostcheckIsDefinedAction(runningWatcher))
                             {
                                 listCheckedWatcher.Add(runningWatcher);
                             }
@@ -290,6 +293,74 @@ namespace MirrorFreezeCopy.Domain
             }
 
             return isDefinedAction;
+        }
+
+        private bool PostcheckSourceFolderExisted(Watcher watcher)
+        {
+            if (Directory.Exists(watcher.Source))
+            {
+                return true;
+            }
+            else
+            {
+                NLogger.Info(
+                       "Invalid Watcher:"
+                       + Environment.NewLine
+                       + "Action: {0}."
+                       + Environment.NewLine
+                       + "Source: {1}."
+                       + Environment.NewLine
+                       + "Destination: {2}."
+                       + Environment.NewLine
+                       + "Watcher Source folder:"
+                       + Environment.NewLine
+                       + "{1}"
+                       + Environment.NewLine
+                       + "doesn't exist.",
+                       watcher.Action,
+                       watcher.Source,
+                       watcher.Destination);
+                return false;
+            }
+        }
+
+        private bool PostcheckDestinationFolderCanBeCreated(Watcher watcher)
+        {
+            if (!Directory.Exists(watcher.Destination))
+            {
+                try
+                {
+                    Directory.CreateDirectory(watcher.Destination);
+                }
+                catch (NotSupportedException ex)
+                {
+                    NLogger.Error(ex, "Error while creating Destination folder.");
+                    NLogger.Info(
+                       "Invalid Watcher:"
+                       + Environment.NewLine
+                       + "Action: {0}."
+                       + Environment.NewLine
+                       + "Source: {1}."
+                       + Environment.NewLine
+                       + "Destination: {2}."
+                       + Environment.NewLine
+                       + "Watcher Destination folder:"
+                       + Environment.NewLine
+                       + "{2}"
+                       + Environment.NewLine
+                       + "can not be created.",
+                       watcher.Action,
+                       watcher.Source,
+                       watcher.Destination);
+                    return false;
+                }
+
+                return true;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }
