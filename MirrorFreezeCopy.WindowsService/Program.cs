@@ -2,7 +2,7 @@
 // Copyright (c) Huy Tran. All rights reserved.
 // </copyright>
 
-namespace MirrorFreezeCopy
+namespace MirrorFreezeCopy.WindowsService
 {
     using System;
     using System.Collections.Generic;

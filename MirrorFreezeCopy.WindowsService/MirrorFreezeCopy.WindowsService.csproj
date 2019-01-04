@@ -33,7 +33,7 @@
     <DocumentationFile>bin\Release\MirrorFreezeCopy.WindowsService.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject />
+    <StartupObject>MirrorFreezeCopy.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
