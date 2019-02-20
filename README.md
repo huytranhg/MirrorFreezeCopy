@@ -60,6 +60,7 @@ MirrorFreezeCopy's built can be downloaded from this link: https://1drv.ms/u/s!A
 -	I didn't imagine the Freeze function, it is used to freeze the config folder of Youtube Downloader HD https://www.youtubedownloaderhd.com, which normally is C:\Users\Username\AppData\Roaming\Youtube Downloader HD
 - The Interval node of configuration file is in seconds.
 - In case the folder size, or number of files, from Windows GUI (Properties) doesn't tally with MirrorFreezeCopy's log, please use a 3rd-party program like WinDirStat https://windirstat.net, or RidNacs https://www.splashsoft.de/ridnacs-disk-space-usage-analyzer to compare with MirrorFreezeCopy's log, since these programs's statistic does tally with MirrorFreezeCopy's log.
+- The startup project is MirrorFreezeCopy.WindowsService.
 	
 ***Source Code***
 - Source code of this program can be found at github: https://github.com/huytranhg/MirrorFreezeCopy
