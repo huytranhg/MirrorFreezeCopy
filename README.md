@@ -23,7 +23,7 @@ MirrorFreezeCopy's built can be downloaded from this link: https://1drv.ms/u/s!A
 	"<Absolute Path of Folder that contains MirrorFreezeCopy.WindowsService.exe>\MirrorFreezeCopy.WindowsService.exe" --install
 	net start "MirrorFreezeCopy"
 	pause
-  Upon installing, Windows will ask for username and password of an account, as administrator, you can use any local account having password (as this is Windows's default policy), with a ./ adding before username, like in below screenshot:
+  Upon installing, Windows will ask for username and password of an account, administrator can use any local account having password (as this is Windows's default policy), with a ./ adding before username, like in below screenshot:
   https://1drv.ms/u/s!AoP1RrY3fZ23dyyjvPuhRxYefkQ
   
   Uninstall this Windows Service by using below script (Run as Administrator), with absolute path, where the MirrorFreezeCopy.WindowsService.exe file was saved:
