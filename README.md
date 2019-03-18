@@ -15,6 +15,7 @@ MirrorFreezeCopy's built can be downloaded from this link: https://1drv.ms/u/s!A
 + Freeze, meaning mirror copy from Destination folder to Source folder whenever Source folder has changed (deletion is not considered a change).
 + Copy, meaning copy only, from Source folder to Destination folder whenever Source folder has changed (deletion is not considered a change).
 - The mirror copy makes an exact 1:1 copy of the two folders, the non-existed files and folders in Source folder will be deleted in Destination folder, so use Mirror and Freeze functions at your own risk.
+- The service works with shared folder.
 
 ***Installation, Uninstallation***
   
