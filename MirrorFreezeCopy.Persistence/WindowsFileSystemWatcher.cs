@@ -87,8 +87,14 @@ namespace MirrorFreezeCopy.Persistence
                 this.fileSystemWatcher = new FileSystemWatcher();
                 this.fileSystemWatcher.IncludeSubdirectories = true;
                 this.fileSystemWatcher.Path = this.watcher.Source;
-                this.fileSystemWatcher.NotifyFilter = NotifyFilters.LastWrite;
+                this.fileSystemWatcher.NotifyFilter = NotifyFilters.LastWrite |
+                    NotifyFilters.LastAccess |
+                    NotifyFilters.FileName |
+                    NotifyFilters.CreationTime |
+                    NotifyFilters.Size;
                 this.fileSystemWatcher.Changed += new FileSystemEventHandler(this.OnChanged);
+                this.fileSystemWatcher.Created += new FileSystemEventHandler(this.OnChanged);
+                this.fileSystemWatcher.Renamed += new RenamedEventHandler(this.OnChanged);
 
                 this.fileSystemWatcher.EnableRaisingEvents = true;
             }
