@@ -67,6 +67,6 @@ MirrorFreezeCopy's built can be downloaded from this link: https://1drv.ms/u/s!A
 	
 ***Source Code***
 - Source code of this program can be found at github: https://github.com/huytranhg/MirrorFreezeCopy
-- Visual Studio 2017 Community were used to develop this program.
+- Visual Studio 2017 Community was used to develop this program.
 
 ---Developed and documented by Huy Tran---
