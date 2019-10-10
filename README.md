@@ -1,9 +1,9 @@
 # MirrorFreezeCopy
 MirrorFreezeCopy Windows Service
 
-MirrorFreezeCopy's built can be downloaded from this link: 
+MirrorFreezeCopy's built can be downloaded from this link: https://1drv.ms/u/s!AuXMfXeK6SgviF9u3hGw1vKhrL5t?e=gteqIt
 
-MD5 checksum: 
+MD5 checksum: feb6fabd4f412c21ce211bbdd96628c6
 
 ***Prerequisites***
 - MirrorFreezeCopy can be run on Windows 7 or higher version of Windows OS.
